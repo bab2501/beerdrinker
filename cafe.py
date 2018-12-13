@@ -26,6 +26,6 @@ while True:
 		os.system("git pull") 
 		time.sleep(30)
                 print(mnow)
-                os.system("python beerdrinker.py")
+                os.system("python beerdrinker.py&")
 	print(mnow())
 	time.sleep(1)
