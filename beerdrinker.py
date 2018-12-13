@@ -60,18 +60,11 @@ def transferAccount(accountNumber, amount, accountNumberDestination):
 
 import socket
 import time
-import os
 
 def hostid():
         hostname = socket.gethostname()
         hostid = int(hostname[-2:])
         return hostid
-
-def tnow():
-        return int(time.time())
-
-def mnow():
-        return (tnow() %900 )
 
 # Get salary
 depositAccount(5, 1900)
