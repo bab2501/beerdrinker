@@ -62,9 +62,9 @@ import socket
 import time
 
 def hostid():
-        hostname = socket.gethostname()
-        hostid = int(hostname[-2:])
-        return hostid
+		hostname = socket.gethostname()
+		hostid = int(hostname[-2:])
+		return hostid
 
 # Get salary
 depositAccount(5, 1900)
@@ -73,5 +73,5 @@ cafe = (hostid() + 1)
 
 # Drink beer ( pay 2 from me(5) to cafebank(4) )
 while True:
-        transferAccount(desk, 2, cafe)
+		transferAccount(desk, 2, cafe)
 		time.sleep(5)
