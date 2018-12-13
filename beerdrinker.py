@@ -57,10 +57,26 @@ def transferAccount(accountNumber, amount, accountNumberDestination):
         r = requests.post(url,json=jdata)
         print("Status: " + str(r.status_code) + " Message: " + r.text + " -- transferAccount " + str(amount) + " from " + str(accountNumber) + " to " + str(accountNumberDestination))
 
+import socket
+import time
+import os
+
+def hostid():
+        hostname = socket.gethostname()
+        hostid = int(hostname[-2:])
+        return hostid
+
+def tnow():
+        return int(time.time())
+
+def mnow():
+        return (tnow() %900 )
 
 # Get salary
 depositAccount(5, 1900)
+desk = hostid()
+cafe = (hostid() + 1)
 
 # Drink beer ( pay 2 from me(5) to cafebank(4) )
 while True:
-        transferAccount(5, 2, 4)
+        transferAccount(desk, 2, cafe)
