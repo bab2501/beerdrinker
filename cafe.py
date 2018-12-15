@@ -20,7 +20,7 @@ print(hostid())
 while True:
 	if(mnow() < 2):
 		print(mnow)
-		os.system("pkill -f hostname.py")
+		os.system("pkill -f beerdrinker.py")
 		time.sleep(5)
 		print(mnow)
 		os.system("git pull") 
