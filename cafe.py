@@ -23,6 +23,7 @@ while True:
 		os.system("pkill -f beerdrinker.py")
 		time.sleep(5)
 		print(mnow)
+		os.system("git reset --hard master") 
 		os.system("git pull") 
 		time.sleep(30)
                 print(mnow)
