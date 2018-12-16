@@ -14,9 +14,9 @@ import time
 # Global Settings
 #########################
 
-host = "dsbank.online"
-protocol = "https"
-port = "443"
+host = "dsvm01.dsbank.online"
+protocol = "http"
+port = "8080"
 baseurl = protocol + "://" + host + ":" + port
 
 ###
