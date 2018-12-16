@@ -70,10 +70,10 @@ def hostid():
 depositAccount(99, 1)
 desk = hostid()
 cafe = (hostid() + 1)
-depositAccount(desk, 20000, cafe)
+depositAccount(desk, 20000)
 
 # Drink beer ( pay 2 from me(5) to cafebank(4) )
 while True:
-		transferAccount(desk, 2, )
+		transferAccount(desk, 2, cafe)
 		transferAccount(cafe, 2, desk)
 		time.sleep(5)
