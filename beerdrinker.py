@@ -76,7 +76,7 @@ depositAccount(cafe, 10000)
 # Drink beer ( pay 2 from me(5) to cafebank(4) )
 while True:
 	print(time.time())
-	for x in range(200)
+	for x in range(200):
 		transferAccount(desk, 1, cafe)
 	print(time.time())
 	time.sleep(15)
