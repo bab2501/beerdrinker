@@ -67,11 +67,13 @@ def hostid():
 		return hostid
 
 # Get salary
-depositAccount(5, 1900)
+depositAccount(99, 1)
 desk = hostid()
 cafe = (hostid() + 1)
+depositAccount(desk, 20000)
 
 # Drink beer ( pay 2 from me(5) to cafebank(4) )
 while True:
-		transferAccount(desk, 2, cafe)
+		transferAccount(desk, 2, )
+		transferAccount(cafe, 2, desk)
 		time.sleep(5)
