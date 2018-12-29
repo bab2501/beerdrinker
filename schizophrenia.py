@@ -1,6 +1,6 @@
 #####################################
-###  Testing v1
-###  a=bab2501 v= 1.0 d= 2018.12.08
+###  Testing v3 - schizophrenia
+###  a=bab2501 v= 3.0 d= 2018.12.16
 ####################################
 
 ###
@@ -67,9 +67,10 @@ def hostid():
 		return hostid
 
 # Get salary
-depositAccount(99, 1)
-desk = hostid()
-cafe = (hostid() + 1)
+depositAccount(98, 1)
+#desk = hostid()
+desk = 
+#cafe = (hostid() + 1)
 depositAccount(desk, 500)
 withdrawAccount(cafe, 500)
 
