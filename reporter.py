@@ -40,4 +40,4 @@ while True:
 		os.system("date >> report.log")
 	print(mnow())
 	time.sleep(1)
-time.sleep(1)o
+print("end")
